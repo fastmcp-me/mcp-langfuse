@@ -1,0 +1,40 @@
+{
+  "private": false,
+  "name": "shouting-mcp-langfuse",
+  "version": "1.0.0",
+  "description": "MCP server for interacting with Langfuse",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z9905080/mcp-langfuse.git"
+  },
+  "keywords": [
+    "mcp-langfuse"
+  ],
+  "author": "shouting.hsiao@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z9905080/mcp-langfuse/issues"
+  },
+  "homepage": "https://github.com/z9905080/mcp-langfuse#readme",
+  "bin": {
+    "mcp-server-langfuse": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "shx": "^0.3.4",
+    "typescript": "^5.6.2"
+  },
+  "type": "module"
+}
